@@ -1,0 +1,117 @@
+---
+title: "CompuTel"
+author: "Samuel Keat"
+date: "18 March 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+DB143ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB143computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB145ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB145computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB147ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB147computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB149ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB149computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB151ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB151computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB153ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB153computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB155ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB155computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB157ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB157computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB158ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB158computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB160ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB160computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB162ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB162computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB164ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB164computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB166ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB166computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB168ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB168computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB170ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB170computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB172ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB172computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB174ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB174computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB176ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB176computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB178ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB178computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB180ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB180computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB182ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB182computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB184ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB184computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB186ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB186computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB188ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB188computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB190ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB190computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB192ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB192computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB194ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB194computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB196ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB196computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB198ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB198computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB200ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB200computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB202ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB202computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB204ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB204computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB206ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB206computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB208ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB208computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB210ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB210computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB212ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB212computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB214ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB214computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB216ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB216computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB218ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB218computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB220ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB220computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB222ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB222computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB224ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB224computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB226ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB226computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB228ctN = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB228computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+```
+
+```{r}
+DB144ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB144computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB146ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB146computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB148ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB148computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB150ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB150computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB152ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB152computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB154ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB154computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB156ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB156computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB159ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB159computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB161ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB161computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB163ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB163computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB165ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB165computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB167ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB167computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB169ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB169computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB171ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB171computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB173ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB173computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB175ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB175computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB177ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB177computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB179ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB179computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB181ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB181computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB183ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB183computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB185ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB185computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB187ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB187computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB189ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB189computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB191ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB191computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB193ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB193computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB195ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB195computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB197ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB197computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB199ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB199computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB201ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB201computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB203ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB203computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB205ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB205computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB207ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB207computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB209ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB209computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB211ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB211computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB213ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB213computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB215ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB215computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB217ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB217computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB219ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB219computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB221ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB221computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB223ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB223computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB225ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB225computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB227ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB227computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB229ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB229computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+DB234ctT = read_delim("C:/Users/Sam/Desktop/Case Study/CompuTel/DB234computel/tel.length.xls", "\t", escape_double = FALSE, trim_ws = TRUE)
+```
+
+```{r}
+Normal=c('DB143','DB145','DB147','DB149','DB151','DB153','DB155','DB157','DB158','DB160','DB162','DB164','DB166','DB168','DB170','DB172','DB174','DB176','DB178','DB180','DB182','DB184','DB186','DB188','DB190','DB192','DB194','DB196','DB198','DB200','DB202','DB204','DB206','DB208','DB210','DB212','DB214','DB216','DB218','DB220','DB222','DB224','DB226','DB228')
+
+NormalCT=tibble(Normal=c('DB143','DB145','DB147','DB149','DB151','DB153','DB155','DB157','DB158','DB160','DB162','DB164','DB166','DB168','DB170','DB172','DB174','DB176','DB178','DB180','DB182','DB184','DB186','DB188','DB190','DB192','DB194','DB196','DB198','DB200','DB202','DB204','DB206','DB208','DB210','DB212','DB214','DB216','DB218','DB220','DB222','DB224','DB226','DB228'),CompuTel=c(DB143ctN[6,2],DB145ctN[6,2],DB147ctN[6,2],DB149ctN[6,2],DB151ctN[6,2],DB153ctN[6,2],DB155ctN[6,2],DB157ctN[6,2],DB158ctN[6,2],DB160ctN[6,2],DB162ctN[6,2],DB164ctN[6,2],DB166ctN[6,2],DB168ctN[6,2],DB170ctN[6,2],DB172ctN[6,2],DB174ctN[6,2],DB176ctN[6,2],DB178ctN[6,2],DB180ctN[6,2],DB182ctN[6,2],DB184ctN[6,2],DB186ctN[6,2],DB188ctN[6,2],DB190ctN[6,2],DB192ctN[6,2],DB194ctN[6,2],DB196ctN[6,2],DB198ctN[6,2],DB200ctN[6,2],DB202ctN[6,2],DB204ctN[6,2],DB206ctN[6,2],DB208ctN[6,2],DB210ctN[6,2],DB212ctN[6,2],DB214ctN[6,2],DB216ctN[6,2],DB218ctN[6,2],DB220ctN[6,2],DB222ctN[6,2],DB224ctN[6,2],DB226ctN[6,2],DB228ctN[6,2]))
+```
+
+```{r}
+TumourCT=tibble(Tumour=c("DB144","DB146","DB148","DB150","DB152","DB154","DB156","DB234","DB159","DB161","DB163","DB165","DB167","DB169","DB171","DB173","DB175","DB177","DB179","DB181","DB183","DB185","DB187","DB189","DB191","DB193","DB195","DB197","DB199","DB201","DB203","DB205","DB207","DB209","DB211","DB213","DB215","DB217","DB219","DB221","DB223","DB225","DB227","DB229"),CompuTel=c(DB144ctT[6,2],DB146ctT[6,2],DB148ctT[6,2],DB150ctT[6,2],DB152ctT[6,2],DB154ctT[6,2],DB156ctT[6,2],DB234ctT[6,2],DB159ctT[6,2],DB161ctT[6,2],DB163ctT[6,2],DB165ctT[6,2],DB167ctT[6,2],DB169ctT[6,2],DB171ctT[6,2],DB173ctT[6,2],DB175ctT[6,2],DB177ctT[6,2],DB179ctT[6,2],DB181ctT[6,2],DB183ctT[6,2],DB185ctT[6,2],DB187ctT[6,2],DB189ctT[6,2],DB191ctT[6,2],DB193ctT[6,2],DB195ctT[6,2],DB197ctT[6,2],DB199ctT[6,2],DB201ctT[6,2],DB203ctT[6,2],DB205ctT[6,2],DB207ctT[6,2],DB209ctT[6,2],DB211ctT[6,2],DB213ctT[6,2],DB215ctT[6,2],DB217ctT[6,2],DB219ctT[6,2],DB221ctT[6,2],DB223ctT[6,2],DB225ctT[6,2],DB227ctT[6,2],DB229ctT[6,2]))
+```
+
+```{r}
+write.table(NormalCT, "C:/Users/Sam/Desktop/Case Study/CompuTelNormal.txt")
+```
+
+```{r}
+```
